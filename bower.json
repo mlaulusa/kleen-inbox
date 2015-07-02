@@ -1,0 +1,26 @@
+{
+  "name": "kleen-inbox",
+  "version": "0.0.1",
+  "private": true,
+  "authors": [
+    "Matthew Laulusa <mlaulusa@users.noreply.github.com>"
+  ],
+  "description": "inbox for work orders",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "jquery": "~2.1.4",
+    "ng-scrollbar": "~0.0.8",
+    "angular-materialize": "*",
+    "skeleton": "~2.0.4",
+    "font-awesome": "~4.3.0"
+  }
+}

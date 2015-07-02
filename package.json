@@ -1,0 +1,25 @@
+{
+  "name": "kleen-inbox",
+  "version": "0.0.1",
+  "description": "inbox for work orders",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlaulusa/kleen-inbox"
+  },
+  "author": "Matthew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlaulusa/kleen-inbox/issues"
+  },
+  "homepage": "https://github.com/mlaulusa/kleen-inbox",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0",
+    "morgan": "^1.6.0"
+  }
+}
