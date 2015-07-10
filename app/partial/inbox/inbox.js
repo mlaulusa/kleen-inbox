@@ -12,12 +12,10 @@ angular.module('kleen.inbox', ['ngRoute'])
 .controller('InboxCtrl', ['$scope', '$http', function($scope, $http){
 	$http.get('/partial/inbox/work-orders.json').then(function(res){
 		$scope.tickets = res.data;
-		console.log(res.data);
 	});
 	$scope.focus = {};
 	$scope.ticketFocus = function (ticket) {
 		$scope.focus = ticket;
-		console.log('click');
 	};
 
 }]);
