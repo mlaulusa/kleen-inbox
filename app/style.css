@@ -1,0 +1,38 @@
+html, body {
+	font-family: 'Raleway';
+	height: 100%;
+	margin: 0;
+}
+
+#left-container {
+	width: 40%;
+	height: inherit;
+	background-color: beige;
+	float: left;
+  height: 100%;
+}
+
+#inbox {
+	padding: 10px;
+}
+
+#right-container {
+	width: 60%;
+	height: inherit;
+	float: right;
+	background-color: #EFF0EE;
+  height: 100%;
+}
+
+#message-container {
+	padding: 10px;
+}
+
+.message {
+	margin: 15px 0;
+	padding: 10px;
+	border: solid 1px #DDDEDD;
+	border-radius: 2px;
+	background-color: white;
+	color: #636363;
+}
