@@ -1,0 +1,17 @@
+<div id="left-container">
+	<div id="inbox-container">
+		<div id="inbox-headers"></div>
+		<div id="inbox" ng-repeat="ticket in tickets">
+			<div class="message-headers" ng-click="ticketFocus(ticket)">{{ticket.subject}}</div>
+		</div>
+	</div>
+</div>
+<div id="right-container">
+	<div id="message-container">
+		<div id="message-header"></div>
+		<div class="message">1.{{focus.message}}</div>
+		<div ng-repeat="message in focus.replies">
+			<div class="message">2.{{message.message}}</div>
+		</div>
+	</div>
+</div>

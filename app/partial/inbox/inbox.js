@@ -14,4 +14,10 @@ angular.module('kleen.inbox', ['ngRoute'])
 		$scope.tickets = res.data;
 		console.log(res.data);
 	});
+	$scope.focus = {};
+	$scope.ticketFocus = function (ticket) {
+		$scope.focus = ticket;
+		console.log('click');
+	};
+
 }]);
