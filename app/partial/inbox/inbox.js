@@ -5,6 +5,10 @@ angular.module('kleen.inbox', ['ngRoute'])
 		templateUrl: "partial/inbox/inbox.html",
 		controller: "InboxCtrl"
 	})
+	.when('/inbox/submit', {
+		templateUrl: "partial/inbox/new-work-order.html",
+		controller: "SubmitCtrl"
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
@@ -24,7 +28,7 @@ angular.module('kleen.inbox', ['ngRoute'])
 		for (var i = 0; i < $scope.tickets[0].replies.length; i++) {
 			$scope.messages.push($scope.tickets[0].replies[i]);
 		}
-		$scope.current = tickets[0];
+		$scope.current = $scope.tickets[0];
 	});
 
 	$scope.ticketFocus = function (ticket) {
@@ -34,10 +38,15 @@ angular.module('kleen.inbox', ['ngRoute'])
 			"message": ticket.message,
 			"date_submitted": ticket.date_submitted
 		});
-		for (var i = 0; i < $scope.tickets[0].replies.length; i++) {
+		for (var i = 0; i < ticket.replies.length; i++) {
 			$scope.messages.push(ticket.replies[i]);
 		}
 		$scope.current = ticket;
 	};
 
+}])
+.controller('SubmitCtrl', ['$scope', '$http', function($scope, $http){
+	$scope.submitWorkOrder = function(workOrder){
+		console.log(workOrder);
+	};
 }]);

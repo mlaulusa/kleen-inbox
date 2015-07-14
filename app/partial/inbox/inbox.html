@@ -1,4 +1,5 @@
 <div class="col-md-5">
+  <a href="#/inbox/submit" class="btn btn-primary" type="button" name="button"><i class="fa fa-plus"></i></a>
   <table class="table table-hover table-bordered">
     <thead>
       <tr>
@@ -21,9 +22,8 @@
 <div class="col-md-7">
   <div class="list-group">
     <div class="list-group-item">
-      <h3>Inbox</h3>
+      <h3 class="text-center">{{current.subject}}</h3>
       <div class="clearfix">
-        <span>{{current.subject}}</span>
         <div aria-label="..." class="btn-group pull-right" role="group">
           <button class="btn btn-default" type="button"><i class="fa fa-mail-reply center"/></button>
           <button class="btn btn-default" type="button">
