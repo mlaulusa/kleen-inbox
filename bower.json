@@ -22,6 +22,8 @@
     "angular-materialize": "*",
     "skeleton": "~2.0.4",
     "font-awesome": "~4.3.0",
-    "angular-route": "~1.4.2"
+    "angular-route": "~1.4.2",
+    "material-design-lite": "~1.0.0",
+    "bootstrap": "~3.3.5"
   }
 }
