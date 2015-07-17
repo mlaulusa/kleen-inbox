@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "node server.js",
-	"postinstall": "bower install"
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,11 @@
   "dependencies": {
     "body-parser": "^1.13.1",
     "express": "^4.13.0",
+    "mongoose": "^4.0.7",
     "morgan": "^1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6"
   }
 }
